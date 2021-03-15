@@ -1,20 +1,20 @@
 *** Settings ***
-Test Setup       Open Homepage
-Test Teardown         Close Browser
-Library         SeleniumLibrary
+Test Setup        Open Homepage
+Test Teardown     Close Browser
+Library           SeleniumLibrary
 
 *** Variables ***
-${browser}    chrome
-${home_page_url}      https://www.powerbuy.co.th/en
+${browser}        chrome
+${home_page_url}    https://www.powerbuy.co.th/en
 ${search_text_field}    //*[@id="txt-searchBox-input"]
-${btn_search}    //*[@id="btn-searchBox-input"]
-${32_to_43_inches}      //*[text()='32 - 43 inches']//preceding::div[2]
-${44_to_55_inches}      //*[text()='44 - 55 inches']//preceding::div[2]
+${btn_search}     //*[@id="btn-searchBox-input"]
+${32_to_43_inches}    //*[text()='32 - 43 inches']//preceding::div[2]
+${44_to_55_inches}    //*[text()='44 - 55 inches']//preceding::div[2]
 ${btn_add_to_cart}    //button[contains(@id, 'btn-addCart')]
-${ele}    //div[text()='Delivery']//ancestor::div[3]
+${ele}            //div[text()='Delivery']//ancestor::div[3]
 ${btn_viewCart}    //*[@id="lnk-viewCart"]
 ${pop_up_add_success}    //*[@type="success"]
-${btn_cart}    //*[@id="btn-openMiniCart"]
+${btn_cart}       //*[@id="btn-openMiniCart"]
 ${btn_continue_shopping}    //*[@id="lnk-viewHome"]/button
 ${default_timeouts}    20
 
@@ -28,7 +28,6 @@ Select TV And Add To Cart
     Select TV And Add To Cart
     View Cart
     Capture Page Screenshot    1.png
-
 
 *** Keywords ***
 Open Homepage
