@@ -1,0 +1,3 @@
+robotframework==4.0b1
+robotframework-seleniumlibrary
+robotframework-datadriver
